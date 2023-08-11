@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe </title>
+</head>
+<body>
+<div>
+    <h1>Apricot Nectar Cake</h1>
+    <h2>Ingredients</h2>
+</div>
+<div>
+    <table cellpadding="25">
+        <tr>
+            <td width="400"> <img src="../images/Apricot-Nectar-Cake-FEATURE.jpeg" height="416" width="384"/>
+                </td>
+            <td>
+                <ul> <h2>Cake:</h2> <li>1 package plain yellow cake mix <li> 1 3-ounce package lemon Jell-O <li> ¾ cup canned apricot nectar<li> ¾ cup vegetable oil <li> 1 teaspoon grated lemon zest <li> 4 large eggs <h3>Glaze</h3> <li> 3/4 cup powdered sugar<li>4 tbsp apricot nectar, or more if needed <li>2 tbsp fresh lemon juice </li>
+                </ul>
+            </td>
+        </tr>
+        </table>
+    <h2> Instructions: </h2>
+<div>
+    <h3> Cake:</h3>
+    <ol> <li>Heat oven to 325°.<li> Spray a 12-cup Bundt pan with vegetable oil and dust with flour. <li>Place cake mix, gelatin, apricot nectar, oil, lemon zest and eggs in a mixing bowl; blend on low 1 minute. <li> Stop and scrape down the sides with a rubber spatula. <li> Increase mixer speed to medium and mix 2 to 3 minutes. <li> Batter will be thick and smooth. <li> Pour into prepared Bundt pan and bake about 40 minutes. <li>Remove cake from oven when done and cool 10 minutes. <li> While cake is cooling, prepare Glaze. </li>
+    </ol>
+    <h3>Glaze:</h3>
+    <ol> <li> Combine all Glaze ingredients in a small saucepan and cook over medium to low heat 3 to 4 minutes until the sugar dissolves. <li> Invert cake onto serving platter and prick holes in the top with a toothpick. <li> Spoon Glaze over cake, allowing the Glaze to seep into the holes.</li>
+    </ol>
+</div>
+ <div>
+     <h2> You can check this recipe by clicking the following link</h2>
+     <a href="https://www.greatamericanpublishers.com/blog/apricot-nectar-cake/"> Get this recipe</a>
+     <br>
+ </div>
+<div>
+    <h2>If you like our recipe, please, leave us a review</h2>
+    <form>
+        <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" email="email"></td>
+        </tr>
+        <tr>
+            <td> Request type: </td>
+            <td> <input type="radio" name="request type" >Personal
+                  <br>
+                 <input type="radio" name="request type">Business </td>
+        </tr>
+        <tr>
+            <td> Want to subscribe to our channel? </td>
+            <td> <input type="checkbox" name="subscriber" > Yes, please </td>
+        </tr>
+        <tr>
+            <td> Message: </td>
+            <td> <textarea name="message"> </textarea> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td> <input type="submit" value="SEND"</td>
+        </tr>
+        </table>
+    </form>
+</div>
+</body>
+
+</html>
