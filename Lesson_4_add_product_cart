@@ -1,0 +1,38 @@
+Feature: Verifying that by the product is in the cart
+
+  Scenario: To add a product into the cart and to verify that it is there
+    Given Open Amazon page
+    When Type pillow in the search field
+    Then Click on search icon
+    Then Open any pillow link
+    Then Add pillow to the cart
+    Then Verify that pillow is in the cart
+
+
+from behave import given, when, then
+from selenium.webdriver.common.by import By
+
+@given('Open Amazon page')
+def open_amazon(context):
+    context.driver.get('https://amazon.com/')
+
+@when ('Type pillow in the search field')
+def type_pillow (context):
+    context.driver.find_element(By.ID,'twotabsearchtextbox').send_keys('pillow')
+
+@then('Click on search icon')
+def click_search_icon(context):
+    context.driver.find_element(By.ID, 'nav-search-submit-button').click()
+
+@then('Open any pillow link')
+def open_pillow_link(context):
+    context.driver.find_element(By.XPATH, "//div[@cel_widget_id='MAIN-SEARCH_RESULTS-3']").click()
+
+@then('Add pillow to the cart')
+def add_pillow(context):
+    context.driver.find_element(By.ID,'add-to-cart-button').click()
+
+@then('Verify that pillow is in the cart')
+def verify_pillow_cart(context):
+    context.driver.find_element(By.XPATH, "//span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold' and text()='Added to Cart']")
+
