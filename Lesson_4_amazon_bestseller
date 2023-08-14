@@ -14,5 +14,6 @@ def amazon_bestseller_page(context):
 
 @then ("Verify 5 links are shown in Bestsellers page")
 def five_links_shown(context):
-    links=context.driver.find_elements(By.XPATH, "//div[@class='celwidget c-f']")
+    links=context.driver.find_elements(By.XPATH, "//div[contains(@class,'_p13n-zg-nav-tab-all_style_zg-tabs-li')]")
+    print(links)
     assert len(links)==5, f'Expected 5 links but got {len(links)}'
